@@ -19,27 +19,32 @@ Create an interactive 3D scene with WebGL that showcases a personalized letter s
 
 ## Approach & Steps
 Document the strategy and step-by-step approach you took to achieve the objectives of the assignment:
-1. First i need to know how to create the object using vertices and indices to create the plane and the letter
+1. First i need to know how to create the object using vertices and indices to create the plane and the letter also the illuminate cube
 2. Then i need to know about translating and rotating the object
 3. Last one i need to understand about pointing light
 
 ### 1. Initialization & Basics
-- Briefly describe how you initialized WebGL and any basic setup.
-- Mention any issues or challenges faced.
+- First i need to setup the vertexshader source and fragment shader source
+- Then i need to link and compile the program that i have setup
 
 ### 2. Plane Construction
-- Detail your approach to creating the XZ plane, including choosing dimensions and positioning.
-- Include any challenges or deviations from the initial plan.
+- To create XZ plane i need to know where vertices will i use and the coordinates of the point
+- I need to understand about indices first and then i can create the xz plane using vertices and indices
 
 ### 3. 3D Letter Construction
-- Explain how you designed the 3D letter, from design considerations to the actual coding.
-- Highlight any special techniques or challenges.
+- To create 3d letter i need to know where vertices will i use and the coordinates of the point
+- I need to understand about indices and normal first so i can create a good 3d letter
 
-### 4. Moving the letter
-- Use the eventkey function so i can move the letter
+### 4. Moving the Letter
+- Use the eventkey function, coordinates point, and use rotate, jump and translatation function so i can move the letter and rotate it
+
+### 5. Rotate the Camera
+- First i need to setup all variables that i need to rotate the scene
+- Use radius, elevation, and azimuth to rotate the scene
+- Use eventkey function to use mousedrag and create some algorithm to rotate the camera
 
 ## Challenges & Learnings
-I face some challenges but i learn on it. i have error when i create the plane when i create it use y = 0 but i know the problem because my camera position
+I face some challenges but i learn on it. i have error when i create the plane when i create it use y = 0 but i know the problem because my camera position. And the hardest challenges that i face is to rotate the scene.
 
 ## References & Resources
 List all the external resources, references, tutorials, or documentation you've consulted during the assignment:
@@ -51,12 +56,8 @@ List all the external resources, references, tutorials, or documentation you've 
 The task is hard but i think the task is good for the students because i learn a lot about webgl and it makes me understand webgl well. And the deadline is good too, it's not too short for us which have a lot of tasks and final projects
 
 ## Screenshots, Screencast & GIFs
-Include some visual representation of your work. These can be static images, YouTube videos, or GIFs that demonstrate the functionality and features you implemented. 
 
-(Note: To embed images or GIFs in Markdown, use: `![Description](URL_TO_IMAGE)`)
-
----
 
 ## Contribution & Collaboration
-Rafi SUtrisno, Apta rasendra, and Dafarel Fatih help me a lot in this task because sometimes when i got and error like why my plane or letter doesnt appear they told me about the concept why i got that and then finally i can continue and finished my task.
+Rafi SUtrisno, Apta rasendra, and Dafarel Fatih help me a lot in this task because sometimes when i got and error like why my plane or letter doesnt appear they told me about the concept why i got that and their helps mean a lot for me. So finally i can continue and finished my task.
 
