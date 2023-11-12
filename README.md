@@ -43,6 +43,10 @@ Document the strategy and step-by-step approach you took to achieve the objectiv
 - Use radius, elevation, and azimuth to rotate the scene
 - Use eventkey function to use mousedrag and create some algorithm to rotate the camera
 
+### 6. Create Illuminate Cube
+- First i need to create variable so i can update the colors of the cube
+- Create algorithm that can combine the variable so i can update the value of the colors of the cube and the light
+
 ## Challenges & Learnings
 I face some challenges but i learn on it. i have error when i create the plane when i create it use y = 0 but i know the problem because my camera position. And the hardest challenges that i face is to rotate the scene.
 
@@ -56,7 +60,7 @@ List all the external resources, references, tutorials, or documentation you've 
 The task is hard but i think the task is good for the students because i learn a lot about webgl and it makes me understand webgl well. And the deadline is good too, it's not too short for us which have a lot of tasks and final projects
 
 ## Screenshots, Screencast & GIFs
-
+![Alt text](img/assignment2.gif)
 
 ## Contribution & Collaboration
 Rafi SUtrisno, Apta rasendra, and Dafarel Fatih help me a lot in this task because sometimes when i got and error like why my plane or letter doesnt appear they told me about the concept why i got that and their helps mean a lot for me. So finally i can continue and finished my task.
