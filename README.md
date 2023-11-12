@@ -17,10 +17,11 @@
 ## Objective
 Create an interactive 3D scene with WebGL that showcases a personalized letter standing on an XZ plane, combined with lighting techniques from a designated light source.
 
----
-
 ## Approach & Steps
 Document the strategy and step-by-step approach you took to achieve the objectives of the assignment:
+1. First i need to know how to create the object using vertices and indices to create the plane and the letter
+2. Then i need to know about translating and rotating the object
+3. Last one i need to understand about pointing light
 
 ### 1. Initialization & Basics
 - Briefly describe how you initialized WebGL and any basic setup.
@@ -34,27 +35,20 @@ Document the strategy and step-by-step approach you took to achieve the objectiv
 - Explain how you designed the 3D letter, from design considerations to the actual coding.
 - Highlight any special techniques or challenges.
 
-(Continue listing other sections and tasks as appropriate...)
-
----
+### 4. Moving the letter
+- Use the eventkey function so i can move the letter
 
 ## Challenges & Learnings
-Describe any significant challenges faced during the project and how you overcame them. Also, document any new things you learned during the process.
-
----
+I face some challenges but i learn on it. i have error when i create the plane when i create it use y = 0 but i know the problem because my camera position
 
 ## References & Resources
 List all the external resources, references, tutorials, or documentation you've consulted during the assignment:
 - [WebGL Fundamentals](https://webglfundamentals.org/)
 - [StackOverflow Post on Matrix Transformations](https://stackoverflow.com/questions/example)
-- Any interactions or questions you raised with ChatGPT.
-
----
+- ChatGPT
 
 ## Feedback & Future Work
-Discuss any feedback you have about the assignment itself (was it too easy, too hard, just right) and what you might want to add or explore in the future.
-
----
+The task is hard but i think the task is good for the students because i learn a lot about webgl and it makes me understand webgl well. And the deadline is good too, it's not too short for us which have a lot of tasks and final projects
 
 ## Screenshots, Screencast & GIFs
 Include some visual representation of your work. These can be static images, YouTube videos, or GIFs that demonstrate the functionality and features you implemented. 
@@ -64,5 +58,5 @@ Include some visual representation of your work. These can be static images, You
 ---
 
 ## Contribution & Collaboration
-If you collaborated with someone or if someone helped you, mention them here, and explain how they contributed or what you learned from them.
+Rafi SUtrisno, Apta rasendra, and Dafarel Fatih help me a lot in this task because sometimes when i got and error like why my plane or letter doesnt appear they told me about the concept why i got that and then finally i can continue and finished my task.
 
