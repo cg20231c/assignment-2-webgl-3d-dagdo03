@@ -94,7 +94,7 @@
                 gl_FragColor = vec4(lightColor * v_color.rgb, v_color.a);
             }
         `;
-        // Define cube vertices
+        // Define plane vertices
         const planeVertices = new Float32Array([
             -7.0, 0.0, -12.0,
             7.0, 0.0, -12.0,
@@ -459,91 +459,17 @@
             1.0, 0.0, 0.0,
             1.0, 0.0, 0.0,
 
-            // // Front face
-            // 0.0, 0.0, 2.0,
-            // 0.0, 0.0, 2.0,
-            // 0.0, 0.0, 2.0,
-            // 0.0, 0.0, 2.0,
-
-            // // Back face
-            // 0.0, 0.0, -1.0,
-            // 0.0, 0.0, -1.0,
-            // 0.0, 0.0, -1.0,
-            // 0.0, 0.0, -1.0,
-
-            // // Left face
-            // -2.0, 0.0, 0.0,
-            // -2.0, 0.0, 0.0,
-            // -2.0, 0.0, 0.0,
-            // -2.0, 0.0, 0.0,
-
-            // // Right face
-            // 2.0, 0.0, 0.0,
-            // 2.0, 0.0, 0.0,
-            // 2.0, 0.0, 0.0,
-            // 2.0, 0.0, 0.0,
-
-            // // Top face
-            // 0.0, 3.0, 0.0,
-            // 0.0, 3.0, 0.0,
-            // 0.0, 3.0, 0.0,
-            // 0.0, 3.0, 0.0,
-
-            // // Bottom face
-            // 0.0, -2.0, 0.0,
-            // 0.0, -2.0, 0.0,
-            // 0.0, -2.0, 0.0,
-            // 0.0, -2.0, 0.0,
-            
-            // // Front face
-            // 0.0, 0.0, 2.0,
-            // 0.0, 0.0, 2.0,
-            // 0.0, 0.0, 2.0,
-            // 0.0, 0.0, 2.0,
-
-            // // Back face
-            // 0.0, 0.0, -1.0,
-            // 0.0, 0.0, -1.0,
-            // 0.0, 0.0, -1.0,
-            // 0.0, 0.0, -1.0,
-
-            // // Left face
-            // -2.0, 0.0, 0.0,
-            // -2.0, 0.0, 0.0,
-            // -2.0, 0.0, 0.0,
-            // -2.0, 0.0, 0.0,
-
-            // // Right face
-            // 2.0, 0.0, 0.0,
-            // 2.0, 0.0, 0.0,
-            // 2.0, 0.0, 0.0,
-            // 2.0, 0.0, 0.0,
-
-            // // Top face
-            // 0.0, 3.0, 0.0,
-            // 0.0, 3.0, 0.0,
-            // 0.0, 3.0, 0.0,
-            // 0.0, 3.0, 0.0,
-
-            // // Bottom face
-            // 0.0, -2.0, 0.0,
-            // 0.0, -2.0, 0.0,
-            // 0.0, -2.0, 0.0,
-            // 0.0, -2.0, 0.0,
-
-
-
         ]);
 
 
         // Define cube faces (using indices)
         const planeIndices = new Uint16Array([
-            0, 1, 2, 0, 2, 3,   // Front face
+            0, 1, 2, 0, 2, 3,   
         ]);
 
         const letterIndices = new Uint16Array([
-            0, 1, 2, 0, 2, 3,   // Front face
-            4, 5, 6, 4, 6, 7,   // Back face
+            0, 1, 2, 0, 2, 3,   
+            4, 5, 6, 4, 6, 7,   
             8,9,10, 8, 10, 11,
             12, 13, 14, 12, 14, 15,
             16,17,18, 16, 18, 19,
@@ -603,32 +529,32 @@
 
         // Define Rubik's Cube colors for each face
         const cubeColors = new Float32Array([
-            // Front face (Red)
+            // Front face 
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
-            // Back face (Green)
+            // Back face 
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
-            // Left face (Blue)
+            // Left face 
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
-            // Right face (Yellow)
+            // Right face 
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
-            // Top face (White)
+            // Top face
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
-            // Bottom face (Orange)
+            // Bottom face
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
             0.0, 1.0, 0.0, 1.0,
@@ -832,7 +758,7 @@
                     break;
                 case ' ':
                     jump = 1;
-                    j += 0.1; // Rotate
+                    j += 0.1; //jump
                     break;
             }
         });
@@ -917,11 +843,8 @@
             // Transformation matrix
             let modelMatrix = mat4.create();
             let modelViewProjectionMatrix = mat4.create();
-           // angle += angularSpeed;
-           mat4.translate(modelMatrix, mat4.create(), [d[0], j, d[1]]);
-       //     mat4.rotateZ(modelMatrix, mat4.create(), angle);
+            mat4.translate(modelMatrix, mat4.create(), [d[0], j, d[1]]);
             mat4.rotateY(modelMatrix, modelMatrix, angle);
-       //     mat4.rotateX(modelMatrix, modelMatrix, angle);
             
             mat4.multiply(modelViewProjectionMatrix, viewProjectionMatrix, modelMatrix);
             if (jump === 1) {
